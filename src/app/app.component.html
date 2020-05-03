@@ -41,7 +41,17 @@
 
 <div class="mat-display-3"> Toggle button </div>
 
-<div> 
+<div>
   <mat-button-toggle #toggleBtn checked> Toggle </mat-button-toggle>
   {{ toggleBtn.checked }}
+</div>
+
+<!-- toggle group that acts as radio button -->
+<div>
+  <mat-button-toggle-group #toggleGroup="matButtonToggleGroup">
+    <mat-button-toggle value="angular"> Angular </mat-button-toggle>
+    <mat-button-toggle value="react"> React </mat-button-toggle>
+    <mat-button-toggle value="vue"> Vue </mat-button-toggle>
+  </mat-button-toggle-group>
+  {{ toggleGroup.value  }}
 </div>
