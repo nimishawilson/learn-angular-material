@@ -1,0 +1,25 @@
+<!-- <p> Basic menu </p> -->
+<!-- xPosition and yPosition controls the position attributes to the menu -->
+<mat-menu #appMenu="matMenu" xPosition="after" yPosition="above">
+    <button mat-menu-item [matMenuTriggerFor]="subMenu"> frontend </button>
+    <button mat-menu-item> backend </button>
+</mat-menu>
+<br>
+<button class="center" color="primary" mat-flat-button [matMenuTriggerFor]="appMenu"> Basic menu </button>
+
+<!-- <p> nested menu </p> -->
+<mat-menu #subMenu="matMenu">
+    <button mat-menu-item> Angular </button>
+    <button mat-menu-item> React </button>
+    <button mat-menu-item> Vue </button>
+</mat-menu>
+
+<!-- lazy rendering -->
+<mat-menu #lazyMenu="matMenu">
+    <ng-template matMenuContent let-name="name">
+        <button mat-menu-item> settings </button>
+        <button mat-menu-item> Logout {{ name }} </button>
+    </ng-template>
+</mat-menu>
+<button mat-raised-button [matMenuTriggerData]="{name: 'Vinu'}" [matMenuTriggerFor]="lazyMenu"> Vinu </button>
+<button mat-raised-button [matMenuTriggerData]="{name: 'Manu'}" [matMenuTriggerFor]="lazyMenu"> Manu </button>

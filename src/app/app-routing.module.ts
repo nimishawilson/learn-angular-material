@@ -8,6 +8,7 @@ import { BadgesComponent } from './badges/badges.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,7 @@ const routes: Routes = [
   { path: 'spinner', component: SpinnerComponent },
   { path: 'toolbar', component: ToolbarComponent },
   { path: 'sidebar', component: SidebarComponent },
-
+  { path: 'menu', component: MenuComponent },
 
 ];
 
