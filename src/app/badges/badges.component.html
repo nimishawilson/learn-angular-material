@@ -1,0 +1,57 @@
+
+<div class="mat-display-3"> Badges </div>
+<p> matBadgePosition attribute to control the position of the badge </p>
+<span matBadge="5"> Notifications </span> <br>
+<span matBadge="4" matBadgeOverlap="false">Text with a badge</span>
+
+<div>
+  <span matBadge="5"> Notifications </span>
+</div>
+<div>
+  <span matBadgePosition="below before" matBadge="5"> below before </span>
+</div>
+<div>
+  <span matBadgePosition="below after" matBadge="5"> below after </span>
+</div>
+<div>
+  <span matBadge="5" matBadgePosition="above before"> above before </span>
+</div>
+
+<p> matBadgeSize attribute to give size of the badge </p>
+<div>
+  <span matBadge="5"> Notifications </span>
+</div>
+<div>
+  <span matBadgeSize="small" matBadge="5"> small </span>
+</div>
+<div>
+  <span matBadgeSize="medium" matBadge="5"> medium </span>
+</div>
+<div>
+  <span matBadgeSize="large" matBadge="5"> large </span>
+</div>
+
+<p> matBadgeColor attribute to set background color of badge </p>
+<p> matBadgeOverlap to avoid overlapping of badge along with text</p>
+
+<div>
+  <span matBadgeColor="primary" matBadge="5"> Notifications </span>
+</div>
+
+<div>
+  <span matBadgeColor="accent" matBadge="5"> Notifications </span>
+</div>
+
+<div>
+  <span matBadgeColor="warn" matBadgeOverlap="false" matBadge="5"> Notifications </span>
+</div>
+
+<p> Property binding with matBadge </p>
+<div>
+  <span [matBadge]="total"> Notifications </span>
+</div>
+
+<p> matBadgeHidden attribute is used to conditionally render badges </p>
+<div>
+  <span [matBadge]="total" [matBadgeHidden]="total === 0"> Notifications </span>
+</div>
