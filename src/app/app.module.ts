@@ -15,9 +15,10 @@ import { SpinnerComponent } from './spinner/spinner.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { MenuComponent } from './menu/menu.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
-  declarations: [AppComponent, ButtonsComponent, TypographyComponent, TogglebuttonComponent, IconsComponent, BadgesComponent, SpinnerComponent, ToolbarComponent, SidebarComponent, MenuComponent],
+  declarations: [AppComponent, ButtonsComponent, TypographyComponent, TogglebuttonComponent, IconsComponent, BadgesComponent, SpinnerComponent, ToolbarComponent, SidebarComponent, MenuComponent, ListComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

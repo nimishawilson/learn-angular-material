@@ -9,6 +9,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { MenuComponent } from './menu/menu.component';
+import { ListComponent } from './list/list.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'toolbar', component: ToolbarComponent },
   { path: 'sidebar', component: SidebarComponent },
   { path: 'menu', component: MenuComponent },
+  { path: 'list', component: ListComponent },
 
 ];
 
