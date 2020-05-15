@@ -10,6 +10,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { MenuComponent } from './menu/menu.component';
 import { ListComponent } from './list/list.component';
+import { GridComponent } from './grid/grid.component';
 
 
 const routes: Routes = [
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'sidebar', component: SidebarComponent },
   { path: 'menu', component: MenuComponent },
   { path: 'list', component: ListComponent },
+  { path: 'grid', component: GridComponent },
 
 ];
 
