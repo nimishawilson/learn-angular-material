@@ -11,6 +11,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { MenuComponent } from './menu/menu.component';
 import { ListComponent } from './list/list.component';
 import { GridComponent } from './grid/grid.component';
+import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 
 
 const routes: Routes = [
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'menu', component: MenuComponent },
   { path: 'list', component: ListComponent },
   { path: 'grid', component: GridComponent },
+  { path: 'expansion-panel', component: ExpansionPanelComponent },
 
 ];
 
