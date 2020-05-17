@@ -31,15 +31,11 @@
             </mat-panel-description>
         </mat-expansion-panel-header>
 
-        <mat-form-field>
-            <mat-label>First name</mat-label>
-            <input matInput>
-        </mat-form-field>
+        <label>First name</label>
+        <input matInput>
 
-        <mat-form-field>
-            <mat-label>Age</mat-label>
-            <input matInput type="number" min="1">
-        </mat-form-field>
+        <label>Age</label>
+        <input matInput type="number" min="1">
 
         <mat-action-row>
             <button mat-button color="primary" (click)="nextStep()">Next</button>
@@ -57,10 +53,8 @@
             </mat-panel-description>
         </mat-expansion-panel-header>
 
-        <mat-form-field>
-            <mat-label>Country</mat-label>
-            <input matInput>
-        </mat-form-field>
+        <label>Country</label>
+        <input matInput>
 
         <mat-action-row>
             <button mat-button color="warn" (click)="prevStep()">Previous</button>
@@ -79,11 +73,8 @@
             </mat-panel-description>
         </mat-expansion-panel-header>
 
-        <mat-form-field>
-            <mat-label>Date</mat-label>
-            <input matInput [matDatepicker]="picker" (focus)="picker.open()" readonly>
-        </mat-form-field>
-        <mat-datepicker #picker></mat-datepicker>
+        <label>Date</label>
+        <input matInput  readonly>
 
         <mat-action-row>
             <button mat-button color="warn" (click)="prevStep()">Previous</button>
