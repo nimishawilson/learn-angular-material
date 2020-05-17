@@ -13,6 +13,7 @@ import { ListComponent } from './list/list.component';
 import { GridComponent } from './grid/grid.component';
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 import { CardComponent } from './card/card.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 
 const routes: Routes = [
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'grid', component: GridComponent },
   { path: 'expansion-panel', component: ExpansionPanelComponent },
   { path: 'card', component: CardComponent },
+  { path: 'tabs', component: TabsComponent },
 
 ];
 

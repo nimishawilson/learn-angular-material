@@ -19,9 +19,10 @@ import { ListComponent } from './list/list.component';
 import { GridComponent } from './grid/grid.component';
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 import { CardComponent } from './card/card.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 @NgModule({
-  declarations: [AppComponent, ButtonsComponent, TypographyComponent, TogglebuttonComponent, IconsComponent, BadgesComponent, SpinnerComponent, ToolbarComponent, SidebarComponent, MenuComponent, ListComponent, GridComponent, ExpansionPanelComponent, CardComponent],
+  declarations: [AppComponent, ButtonsComponent, TypographyComponent, TogglebuttonComponent, IconsComponent, BadgesComponent, SpinnerComponent, ToolbarComponent, SidebarComponent, MenuComponent, ListComponent, GridComponent, ExpansionPanelComponent, CardComponent, TabsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
