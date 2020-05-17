@@ -1,0 +1,53 @@
+<div class="mat-display-3"> Stepper </div>
+
+<div class="mat-display-1"> Basic Stepper </div>
+<mat-horizontal-stepper>
+    <mat-step label="Shipping Address"> Shipping Address Details </mat-step>
+    <mat-step label="Billing Address">
+        Billing Address Details
+        <div>
+            <button color="primary" mat-button matStepperPrevious> Back </button>
+            <button color="accent" mat-button matStepperNext> Next </button>
+        </div>
+    </mat-step>
+    <mat-step label="Placing Order"> Order Details</mat-step>
+</mat-horizontal-stepper>
+<mat-divider> </mat-divider>
+
+
+<div class="mat-display-1"> Linear Stepper </div>
+<p> Steps to convert simple stepper to a linear stepper <small> ( Linear stepper is a stepper that can complete each step and then only proceed to the next ) </small> </p> 
+<ul>
+    <li>
+        Add <em> linear </em>  attribute to mat-horizontal stepper component.
+    </li>
+    <li>
+        Add <em> completed </em>  attribute to the individual steps.
+    </li>
+</ul>
+<mat-horizontal-stepper linear>
+    <mat-step label="Shipping Address" completed=false> Shipping Address Details </mat-step>
+    <mat-step label="Billing Address" completed=false>
+        Billing Address Details
+        <div>
+            <button color="primary" mat-button matStepperPrevious> Back </button>
+            <button color="accent" mat-button matStepperNext> Next </button>
+        </div>
+    </mat-step>
+    <mat-step label="Placing Order" completed=false> Order Details</mat-step>
+</mat-horizontal-stepper>
+
+<div class="mat-display-1"> Vertical Stepper </div>
+<p> Change the horizontal stepper into vertical stepper by changing <em> mat-horizontal-stepper </em> to <em> mat-vertical-stepper </em>  </p>
+<mat-vertical-stepper>
+    <mat-step label="Shipping Address"> Shipping Address Details </mat-step>
+    <mat-step label="Billing Address">
+        Billing Address Details
+        <div>
+            <button color="primary" mat-button matStepperPrevious> Back </button>
+            <button color="accent" mat-button matStepperNext> Next </button>
+        </div>
+    </mat-step>
+    <mat-step label="Placing Order"> Order Details</mat-step>
+</mat-vertical-stepper>
+<mat-divider> </mat-divider>
