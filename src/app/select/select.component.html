@@ -1,0 +1,45 @@
+<div class="mat-display-3"> Select </div>
+
+<mat-form-field>
+    <mat-label> Topic </mat-label>
+    <mat-select [(value)]="selectedValue">
+        <mat-option value="angular"> Angular </mat-option>
+        <mat-option value="react"> React </mat-option>
+        <mat-option value="vue"> Vue </mat-option>
+    </mat-select>
+</mat-form-field>
+{{ selectedValue }}
+<mat-divider> </mat-divider>
+
+<div class="mat-display-1"> Select with custom trigger text (multiple select) </div>
+<p> for multiple select add attribute multiple to mat-select </p>
+<mat-form-field>
+    <mat-label>Toppings</mat-label>
+    <mat-select [formControl]="toppings" multiple>
+        <mat-select-trigger>
+            {{toppings.value ? toppings.value[0] : ''}}
+            <span *ngIf="toppings.value?.length > 1">
+                (+{{toppings.value.length - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
+            </span>
+        </mat-select-trigger>
+        <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+    </mat-select>
+</mat-form-field>
+<mat-divider> </mat-divider>
+
+<div class="mat-display-1"> Grouping </div>
+<mat-form-field>
+    <mat-label> Topic </mat-label>
+    <mat-select>
+        <mat-option> None </mat-option>
+        <mat-optgroup label="web">
+            <mat-option value="angular"> Angular </mat-option>
+            <mat-option value="react"> React </mat-option>
+            <mat-option value="vue"> Vue </mat-option>
+        </mat-optgroup>
+        <mat-optgroup label="mobile">
+            <mat-option value="angular"> Ionic </mat-option>
+            <mat-option value="react"> React Native </mat-option>
+        </mat-optgroup>
+    </mat-select>
+</mat-form-field>

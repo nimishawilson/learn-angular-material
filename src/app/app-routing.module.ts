@@ -16,6 +16,7 @@ import { CardComponent } from './card/card.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { StepperComponent } from './stepper/stepper.component';
 import { InputComponent } from './input/input.component';
+import { SelectComponent } from './select/select.component';
 
 
 const routes: Routes = [
@@ -35,7 +36,7 @@ const routes: Routes = [
   { path: 'tabs', component: TabsComponent },
   { path: 'stepper', component: StepperComponent },
   { path: 'input', component: InputComponent },
-
+  { path: 'select', component: SelectComponent },
 ];
 
 @NgModule({
