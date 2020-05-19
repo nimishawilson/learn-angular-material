@@ -25,9 +25,10 @@ import { StepperComponent } from './stepper/stepper.component';
 import { InputComponent } from './input/input.component';
 import { SelectComponent } from './select/select.component';
 import { AutocompleteComponent } from './autocomplete/autocomplete.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
 
 @NgModule({
-  declarations: [AppComponent, ButtonsComponent, TypographyComponent, TogglebuttonComponent, IconsComponent, BadgesComponent, SpinnerComponent, ToolbarComponent, SidebarComponent, MenuComponent, ListComponent, GridComponent, ExpansionPanelComponent, CardComponent, TabsComponent, StepperComponent, InputComponent, SelectComponent, AutocompleteComponent],
+  declarations: [AppComponent, ButtonsComponent, TypographyComponent, TogglebuttonComponent, IconsComponent, BadgesComponent, SpinnerComponent, ToolbarComponent, SidebarComponent, MenuComponent, ListComponent, GridComponent, ExpansionPanelComponent, CardComponent, TabsComponent, StepperComponent, InputComponent, SelectComponent, AutocompleteComponent, CheckboxComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
