@@ -17,6 +17,7 @@ import { TabsComponent } from './tabs/tabs.component';
 import { StepperComponent } from './stepper/stepper.component';
 import { InputComponent } from './input/input.component';
 import { SelectComponent } from './select/select.component';
+import { AutocompleteComponent } from './autocomplete/autocomplete.component';
 
 
 const routes: Routes = [
@@ -37,6 +38,7 @@ const routes: Routes = [
   { path: 'stepper', component: StepperComponent },
   { path: 'input', component: InputComponent },
   { path: 'select', component: SelectComponent },
+  { path: 'autocomplete', component: AutocompleteComponent },
 ];
 
 @NgModule({

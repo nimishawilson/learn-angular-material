@@ -24,9 +24,10 @@ import { TabsComponent } from './tabs/tabs.component';
 import { StepperComponent } from './stepper/stepper.component';
 import { InputComponent } from './input/input.component';
 import { SelectComponent } from './select/select.component';
+import { AutocompleteComponent } from './autocomplete/autocomplete.component';
 
 @NgModule({
-  declarations: [AppComponent, ButtonsComponent, TypographyComponent, TogglebuttonComponent, IconsComponent, BadgesComponent, SpinnerComponent, ToolbarComponent, SidebarComponent, MenuComponent, ListComponent, GridComponent, ExpansionPanelComponent, CardComponent, TabsComponent, StepperComponent, InputComponent, SelectComponent],
+  declarations: [AppComponent, ButtonsComponent, TypographyComponent, TogglebuttonComponent, IconsComponent, BadgesComponent, SpinnerComponent, ToolbarComponent, SidebarComponent, MenuComponent, ListComponent, GridComponent, ExpansionPanelComponent, CardComponent, TabsComponent, StepperComponent, InputComponent, SelectComponent, AutocompleteComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
