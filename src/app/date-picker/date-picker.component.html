@@ -1,0 +1,44 @@
+<div class="mat-display-3"> Datepicker </div>
+
+<p> Basic datepicker </p>
+<mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+<mat-divider> </mat-divider>
+
+<p> The <em> <i> startView </i></em> property of <em> mat-datepicker </em> can be used to set the view that will show up
+    when the calendar first opens.
+    It can be set to month, year, or multi-year; by default it will open to month view. </p>
+<mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="dpicker">
+    <mat-datepicker-toggle matSuffix [for]="dpicker"></mat-datepicker-toggle>
+    <mat-datepicker #dpicker startView="year"></mat-datepicker>
+</mat-form-field>
+<mat-divider> </mat-divider>
+
+<p> min and max for setting minimum and maximum dates that can be chosen</p>
+<mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="mdatepicker" [min]="minDate" [max]="maxDate">
+    <mat-datepicker-toggle matSuffix [for]="mdatepicker"></mat-datepicker-toggle>
+    <mat-datepicker #mdatepicker></mat-datepicker>
+</mat-form-field>
+<mat-divider> </mat-divider>
+
+<p> The second way to add date validation is using the matDatepickerFilter property of the datepicker input.
+    This property accepts a function of D => boolean (where D is the date type used by the datepicker, see Choosing a
+    date implementation).
+    A result of true indicates that the date is valid and a result of false indicates that it is not.
+    Again this will also disable the dates on the calendar that are invalid. </p>
+
+<mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepickerFilter]="myFilter" [matDatepicker]="datepick">
+    <mat-datepicker-toggle matSuffix [for]="datepick"></mat-datepicker-toggle>
+    <mat-datepicker #datepick></mat-datepicker>
+</mat-form-field>
+<mat-divider> </mat-divider>
