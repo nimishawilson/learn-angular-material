@@ -20,7 +20,7 @@ import { SelectComponent } from './select/select.component';
 import { AutocompleteComponent } from './autocomplete/autocomplete.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { DatePickerComponent } from './date-picker/date-picker.component';
-
+import { TooltipComponent } from "./tooltip/tooltip.component";
 
 const routes: Routes = [
   { path: 'buttons', component: ButtonsComponent },
@@ -42,7 +42,8 @@ const routes: Routes = [
   { path: 'select', component: SelectComponent },
   { path: 'autocomplete', component: AutocompleteComponent },
   { path: 'checkbox', component: CheckboxComponent },
-  { path: 'date-picker', component: DatePickerComponent }
+  { path: 'date-picker', component: DatePickerComponent },
+  { path: 'tooltip', component: TooltipComponent }
 ];
 
 @NgModule({

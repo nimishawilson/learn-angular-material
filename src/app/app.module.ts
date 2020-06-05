@@ -27,9 +27,10 @@ import { SelectComponent } from './select/select.component';
 import { AutocompleteComponent } from './autocomplete/autocomplete.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { DatePickerComponent } from './date-picker/date-picker.component';
+import { TooltipComponent } from './tooltip/tooltip.component';
 
 @NgModule({
-  declarations: [AppComponent, ButtonsComponent, TypographyComponent, TogglebuttonComponent, IconsComponent, BadgesComponent, SpinnerComponent, ToolbarComponent, SidebarComponent, MenuComponent, ListComponent, GridComponent, ExpansionPanelComponent, CardComponent, TabsComponent, StepperComponent, InputComponent, SelectComponent, AutocompleteComponent, CheckboxComponent, DatePickerComponent],
+  declarations: [AppComponent, ButtonsComponent, TypographyComponent, TogglebuttonComponent, IconsComponent, BadgesComponent, SpinnerComponent, ToolbarComponent, SidebarComponent, MenuComponent, ListComponent, GridComponent, ExpansionPanelComponent, CardComponent, TabsComponent, StepperComponent, InputComponent, SelectComponent, AutocompleteComponent, CheckboxComponent, DatePickerComponent, TooltipComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

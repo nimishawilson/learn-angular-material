@@ -1,0 +1,29 @@
+
+
+
+<p> Basic tooltip </p>
+<button mat-raised-button
+        matTooltip="Info about the action">
+  Action
+</button>
+<mat-divider> </mat-divider>
+
+<p> Positioned tooltip </p>
+<p> The tooltip will be displayed below the element by default but this can be configured using the <strong> matTooltipPosition </strong> input </p>
+<button mat-raised-button
+      matTooltipPosition="above"  matTooltip="Tooltip positioned above">
+  Action
+</button>
+<mat-divider> </mat-divider>
+
+<p> Tooltip with a show and hide delay </p>
+<p> To add a delay before showing or hiding the tooltip, you can use the inputs <strong> matTooltipShowDelay </strong> and <strong> matTooltipHideDelay </strong>    to provide a delay time in milliseconds. </p>
+<button mat-raised-button matTooltipShowDelay="1000"
+        matTooltip="show after 1 sec">
+  Show delay
+</button>
+
+<button mat-raised-button matTooltipHideDelay="1000"
+        matTooltip="hide after 1 sec">
+  Hide delay
+</button>
