@@ -29,17 +29,47 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { DatePickerComponent } from './date-picker/date-picker.component';
 import { TooltipComponent } from './tooltip/tooltip.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
+import {
+  DialogComponent,
+  DialogOverviewExampleDialog,
+} from './dialog/dialog.component';
 
 @NgModule({
-  declarations: [AppComponent, ButtonsComponent, TypographyComponent, TogglebuttonComponent, IconsComponent, BadgesComponent, SpinnerComponent, ToolbarComponent, SidebarComponent, MenuComponent, ListComponent, GridComponent, ExpansionPanelComponent, CardComponent, TabsComponent, StepperComponent, InputComponent, SelectComponent, AutocompleteComponent, CheckboxComponent, DatePickerComponent, TooltipComponent, SnackbarComponent],
+  declarations: [
+    AppComponent,
+    ButtonsComponent,
+    TypographyComponent,
+    TogglebuttonComponent,
+    IconsComponent,
+    BadgesComponent,
+    SpinnerComponent,
+    ToolbarComponent,
+    SidebarComponent,
+    MenuComponent,
+    ListComponent,
+    GridComponent,
+    ExpansionPanelComponent,
+    CardComponent,
+    TabsComponent,
+    StepperComponent,
+    InputComponent,
+    SelectComponent,
+    AutocompleteComponent,
+    CheckboxComponent,
+    DatePickerComponent,
+    TooltipComponent,
+    SnackbarComponent,
+    DialogComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
-    MaterialModule
+    MaterialModule,
   ],
+  entryComponents: [DialogOverviewExampleDialog],
   providers: [],
   bootstrap: [AppComponent],
 })
