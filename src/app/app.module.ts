@@ -33,6 +33,7 @@ import {
   DialogComponent,
   DialogOverviewExampleDialog,
 } from './dialog/dialog.component';
+import { DataTableComponent } from './data-table/data-table.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import {
     TooltipComponent,
     SnackbarComponent,
     DialogComponent,
+    DataTableComponent,
   ],
   imports: [
     BrowserModule,

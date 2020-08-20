@@ -23,6 +23,8 @@ import { DatePickerComponent } from './date-picker/date-picker.component';
 import { TooltipComponent } from "./tooltip/tooltip.component";
 import { SnackbarComponent } from './snackbar/snackbar.component';
 import { DialogComponent } from './dialog/dialog.component';
+import { DataTableComponent } from './data-table/data-table.component';
+
 
 
 const routes: Routes = [
@@ -48,7 +50,8 @@ const routes: Routes = [
   { path: 'date-picker', component: DatePickerComponent },
   { path: 'tooltip', component: TooltipComponent },
   { path: 'snackbar', component: SnackbarComponent },
-  { path: 'dialog', component: DialogComponent }
+  { path: 'dialog', component: DialogComponent },
+  { path: 'data-table', component: DataTableComponent }
 ];
 
 @NgModule({
